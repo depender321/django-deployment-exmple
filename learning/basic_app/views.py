@@ -94,3 +94,6 @@ def register(request):
         profile_form=UserProfileInfoForm()
 
     return render(request,'basic_app/registration.html',{'user_form':user_form,'profile_form':profile_form,'registered':registered})
+
+def home(request):
+    return HttpResponse('<h1>Welcome Sanjay kumar patel and lata ben patel</h1>')
