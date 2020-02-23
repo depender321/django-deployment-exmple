@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Welcome to My Website</h1>
+    <a href="{% url 'admin:index' %}">Go to admin</a>
+    <a href="{% url 'formpage' %}">Go to form</a>
+
+    {% if user.is_authenticated %}
+    	<li><a href="{% url 'logout' %}">Logout</a></li>
+    {% else %}
+    	<li><a href="{% url 'user_login' %}">Login</a></li>
+    	<li><a href="{% url 'register' %}">register</a></li>
+    {% endif %}
+  </body>
+</html>
