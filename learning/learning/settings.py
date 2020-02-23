@@ -28,7 +28,7 @@ SECRET_KEY = 't4&lwg3ymw*fiabv93!7unm-e-8)p4#-t+nc-0_on#y+!tdb1m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['depender321.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
